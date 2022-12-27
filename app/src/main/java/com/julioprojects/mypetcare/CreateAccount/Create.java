@@ -16,7 +16,7 @@ import com.julioprojects.mypetcare.Login.Login;
 import com.julioprojects.mypetcare.R;
 import com.julioprojects.mypetcare.databinding.ActivityCreateLoginBinding;
 
-public class create_login extends AppCompatActivity {
+public class Create extends AppCompatActivity {
 
     private ActivityCreateLoginBinding binding;
 

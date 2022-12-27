@@ -14,10 +14,13 @@
         android:theme="@style/Theme.MyPetCare"
         tools:targetApi="31">
         <activity
+            android:name=".Home"
+            android:exported="false" />
+        <activity
             android:name=".Login.Login"
             android:exported="false" />
         <activity
-            android:name=".CreateAccount.create_login"
+            android:name=".CreateAccount.Create"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
