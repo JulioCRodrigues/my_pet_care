@@ -128,5 +128,22 @@
         android:hint="Pet"
         android:textColorHint="@color/white_theme"/>
 
+    <Button
+        style="@style/Widget.Material3.Button.ElevatedButton"
+        android:id="@+id/elevatedButton"
+        android:layout_marginTop="32dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintTop_toBottomOf="@id/spinnerPet"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#696969"
+        android:text="Cadastrar"
+        android:textSize="16sp"
+        android:textAllCaps="true"
+        />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -14,6 +14,9 @@
         android:theme="@style/Theme.MyPetCare"
         tools:targetApi="31">
         <activity
+            android:name=".Login.Login"
+            android:exported="false" />
+        <activity
             android:name=".CreateAccount.create_login"
             android:exported="true">
             <intent-filter>
