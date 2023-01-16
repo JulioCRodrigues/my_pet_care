@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 
 import com.julioprojects.mypetcare.databinding.ActivityMainBinding;
 
@@ -19,5 +20,6 @@ public class MainActivity extends AppCompatActivity {
         View view = binding.getRoot();
         super.onCreate(savedInstanceState);
         setContentView(view);
+
     }
 }
