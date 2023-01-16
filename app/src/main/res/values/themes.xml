@@ -20,5 +20,13 @@
         <item name="android:textColor">@color/white_theme</item>
     </style>
 
+    <style name="Widget.App.BottomNavigationView" parent="Widget.MaterialComponents.BottomNavigationView.Colored">
+        <item name="materialThemeOverlay">@style/ThemeOverlay.App.BottomNavigationView</item>
+    </style>
+
+    <style name="ThemeOverlay.App.BottomNavigationView" parent="">
+        <item name="colorOnPrimary">#3A506B</item>
+    </style>
+
 
 </resources>

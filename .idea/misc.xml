@@ -6,6 +6,8 @@
         <entry key="..\:/Users/jrodrigues/AndroidStudioProjects/MyPetCare/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.166" />
         <entry key="..\:/Users/jrodrigues/AndroidStudioProjects/MyPetCare/app/src/main/res/drawable/box_pet.xml" value="0.166" />
         <entry key="..\:/Users/jrodrigues/AndroidStudioProjects/MyPetCare/app/src/main/res/drawable/box_pext.xml" value="0.166" />
+        <entry key="..\:/Users/jrodrigues/AndroidStudioProjects/MyPetCare/app/src/main/res/drawable/box_task_home.xml" value="0.166" />
+        <entry key="..\:/Users/jrodrigues/AndroidStudioProjects/MyPetCare/app/src/main/res/drawable/box_title_task.xml" value="0.166" />
         <entry key="..\:/Users/jrodrigues/AndroidStudioProjects/MyPetCare/app/src/main/res/drawable/color_selector.xml" value="0.123" />
         <entry key="..\:/Users/jrodrigues/AndroidStudioProjects/MyPetCare/app/src/main/res/drawable/ic_baseline_person.xml" value="0.166" />
         <entry key="..\:/Users/jrodrigues/AndroidStudioProjects/MyPetCare/app/src/main/res/drawable/ic_launcher_background.xml" value="0.166" />
@@ -14,8 +16,10 @@
         <entry key="..\:/Users/jrodrigues/AndroidStudioProjects/MyPetCare/app/src/main/res/layout/activity_home.xml" value="0.20863616930312098" />
         <entry key="..\:/Users/jrodrigues/AndroidStudioProjects/MyPetCare/app/src/main/res/layout/activity_login.xml" value="0.20863616930312098" />
         <entry key="..\:/Users/jrodrigues/AndroidStudioProjects/MyPetCare/app/src/main/res/layout/activity_main.xml" value="0.24010416666666667" />
+        <entry key="..\:/Users/jrodrigues/AndroidStudioProjects/MyPetCare/app/src/main/res/layout/adapter_task.xml" value="0.20863616930312098" />
         <entry key="..\:/Users/jrodrigues/AndroidStudioProjects/MyPetCare/app/src/main/res/layout/spinner_color.xml" value="0.264" />
         <entry key="..\:/Users/jrodrigues/AndroidStudioProjects/MyPetCare/app/src/main/res/layout/spinner_item.xml" value="0.20599409033347404" />
+        <entry key="..\:/Users/jrodrigues/AndroidStudioProjects/MyPetCare/app/src/main/res/menu/bottom_navigation_menu.xml" value="0.20863616930312098" />
         <entry key="..\:/Users/jrodrigues/AppData/Local/Android/Sdk/platforms/android-32/data/res/layout/simple_spinner_item.xml" value="0.20863616930312098" />
       </map>
     </option>

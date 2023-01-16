@@ -7,24 +7,13 @@
     android:background="#B3C2F2"
     tools:context=".Home.Home">
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="73dp"
-        android:layout_height="67dp"
-        android:layout_marginTop="11dp"
-        android:layout_marginEnd="16dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/pata" />
-
     <View
         android:id="@+id/view"
         android:layout_width="168dp"
         android:layout_height="157dp"
-        android:layout_marginStart="99dp"
         android:layout_marginTop="71dp"
         android:background="@drawable/image_pet_profile"
-        app:layout_constraintEnd_toStartOf="@+id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
@@ -39,5 +28,28 @@
         app:layout_constraintStart_toStartOf="@+id/view"
         app:layout_constraintTop_toTopOf="@+id/view"
         app:srcCompat="@drawable/ic_baseline_photo_camera" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        style="@style/Widget.App.BottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F1F1F1"
+        app:labelVisibilityMode="labeled"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/bottom_navigation_menu" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_task"
+        android:layout_width="match_parent"
+        android:layout_height="414dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

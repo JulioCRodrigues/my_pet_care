@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/home"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_home"
+        android:title="@string/home"/>
+    <item
+        android:id="@+id/pets"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_pets"
+        android:title="@string/pets"/>
+
+    <item
+        android:id="@+id/registers"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_library_books"
+        android:title="@string/vacinas"/>
+
+    <item
+        android:id="@+id/help"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_place"
+        android:title="@string/sos"/>
+
+</menu>
