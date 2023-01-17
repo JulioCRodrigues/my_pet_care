@@ -8,7 +8,7 @@
     tools:context=".Home.Home">
 
     <View
-        android:id="@+id/view"
+        android:id="@+id/viewPicture"
         android:layout_width="168dp"
         android:layout_height="157dp"
         android:layout_marginTop="71dp"
@@ -23,10 +23,10 @@
         android:id="@+id/imageView2"
         android:layout_width="53dp"
         android:layout_height="42dp"
-        app:layout_constraintBottom_toBottomOf="@+id/view"
-        app:layout_constraintEnd_toEndOf="@+id/view"
-        app:layout_constraintStart_toStartOf="@+id/view"
-        app:layout_constraintTop_toTopOf="@+id/view"
+        app:layout_constraintBottom_toBottomOf="@+id/viewPicture"
+        app:layout_constraintEnd_toEndOf="@+id/viewPicture"
+        app:layout_constraintStart_toStartOf="@+id/viewPicture"
+        app:layout_constraintTop_toTopOf="@+id/viewPicture"
         app:srcCompat="@drawable/ic_baseline_photo_camera" />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
@@ -50,6 +50,21 @@
         android:layout_marginEnd="8dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/view" />
+        app:layout_constraintTop_toBottomOf="@+id/viewPicture" />
+
+    <TextView
+        android:id="@+id/tvPhoto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Adicione a foto do seu pet!"
+        android:textAlignment="center"
+        android:textColor="#F1F1F1"
+        android:textSize="10sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/viewPicture"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toStartOf="@+id/viewPicture"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -4,6 +4,14 @@
         <item>Escolha o seu pet...</item>
         <item>Cachorro</item>
         <item>Gato</item>
+        <item>Porquinho</item>
+        <item>Coelho</item>
+        <item>Peixe</item>
+        <item>Hamster</item>
+
+
+
+
 
     </string-array>
 </resources>
