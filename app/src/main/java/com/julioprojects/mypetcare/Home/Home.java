@@ -1,5 +1,6 @@
 package com.julioprojects.mypetcare.Home;
 
+import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -11,11 +12,15 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.provider.MediaStore;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.google.android.material.navigation.NavigationBarView;
+import com.julioprojects.mypetcare.Login.Login;
 import com.julioprojects.mypetcare.R;
 import com.julioprojects.mypetcare.databinding.ActivityHomeBinding;
 import com.squareup.picasso.Picasso;
@@ -29,6 +34,8 @@ public class Home extends AppCompatActivity {
     private RecyclerView recycler;
     private List<TitleTask> titleTaskList = new ArrayList<>();
     private Dialog dialog;
+    private BottomNavigationView navigationView;
+
 
     // Vars
     private TextView txtUploadPicture;
@@ -46,6 +53,21 @@ public class Home extends AppCompatActivity {
 
         recycler = binding.recyclerTask;
         viewPicture = binding.viewPicture;
+
+        // Bottom Navigation - navegações com intent
+        navigationView = (BottomNavigationView) binding.bottomNavigation;
+        navigationView.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+                switch (item.getItemId()){
+                    case R.id.help:
+                        Intent intent = new Intent(getApplicationContext(), Maps.class);
+                        startActivity(intent);
+                        break;
+                }
+                return true;
+            }
+        });
 
         // Criando tarefas
         this.createTask();
@@ -68,7 +90,7 @@ public class Home extends AppCompatActivity {
         btnInsertPicture.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(Home.this, "Click!", Toast.LENGTH_SHORT).show();
+                openAlert();
             }
         });
 
@@ -117,28 +139,15 @@ public class Home extends AppCompatActivity {
     }
 
     private void takePhoto() {
-        Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
-
-        if(intent.resolveActivity(getPackageManager()) != null){
-            startActivityForResult(intent, REQUEST_IMAGE_CAPTURE);
-        }
+        // Intent da camera
+        Intent intentCam = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+        startActivity(intentCam);
     }
 
     private void startUploadPhoto() {
 
-        Intent intent = new Intent(Intent.ACTION_PICK, MediaStore.Images.Media.INTERNAL_CONTENT_URI);
-        startActivityForResult(Intent.createChooser(intent, "Selecione uma imagem"), 123);
+        Toast.makeText(this, "Buscar!", Toast.LENGTH_SHORT).show();
 
     }
 
-    @Override
-    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-        if(resultCode == Activity.RESULT_OK){
-            if(requestCode == 123){
-                Uri image = data.getData();
-                Picasso.get().load("https://i.imgur.com/DvpvklR.png").into(viewPicture);
-
-            }
-        }
-    }
 }
